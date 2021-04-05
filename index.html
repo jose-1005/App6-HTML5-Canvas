@@ -36,47 +36,48 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
+	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
 
 
 
-// this function will draw a rectangle with a fading red color.
-function drawRect() {
-   let tagIt = document.getElementById("myCanvas");
-   let contextIt = tagIt.getContext("2d");
-   let myColor = contextIt.createLinearGradient(0, 0, 0, 170);
-   myColor.addColorStop(0, "red");
-   myColor.addColorStop(1, "blue");
-   contextIt.fillStyle = myColor;
-   contextIt.fillRect(20, 20, 150, 100);
-  
-}
+	// this function will draw a rectangle with a fading red color.
+	function drawRect() {
+	   let tagIt = document.getElementById("myCanvas");
+	   let contextIt = tagIt.getContext("2d");
+	   let myColor = contextIt.createLinearGradient(0, 0, 0, 170);
+	   myColor.addColorStop(0, "red");
+	   myColor.addColorStop(1, "blue");
+	   contextIt.fillStyle = myColor;
+	   contextIt.fillRect(20, 20, 150, 100);
 
-// this function will draw my name, though it will not fill it, it will merely draw the outline (which is what I want)
-function drawMyName(){
-   let tagIt2 = document.getElementById("myCanvas");
-   let contextIt2 = tagIt2.getContext("2d");
-   contextIt2.font = "20px Arial";
-   contextIt2.strokeText("José", 100, 50);
-}
+	}
 
-// this function draws an all-time classic character from Star Wars: Bobba Fett
-function drawBoba(){
-   var tagIt3 = document.getElementById("myCanvas");
-   var contextIt3 = tagIt3.getContext("2d");
-   var boba = new Image();
-   boba.src = "http://c0.klipartz.com/pngpicture/684/987/gratis-png-boba-fett-obi-wan-kenobi-luke-skywalker-star-wars-cazarrecompensas-anakin-skywalker-armadura-de-escala.png";
-   boba.onload = function(){
-      contextIt3.drawImage(boba, 100, 100, 100, 100);
+	// this function will draw my name, though it will not fill it, it will merely draw the outline (which is what I want)
+	function drawMyName(){
+	   let tagIt2 = document.getElementById("myCanvas");
+	   let contextIt2 = tagIt2.getContext("2d");
+	   contextIt2.font = "20px Arial";
+	   contextIt2.strokeText("José", 100, 50);
+	}
 
-   }
-	
-function clearCanvas(){
-   var tagIt3 = document.getElementById("myCanvas");
-   var contextIt3 = tagIt3.getContext("2d");
-   contextIt3.clearRect(0, 0, 200, 200);
+	// this function draws an all-time classic character from Star Wars: Bobba Fett
+	function drawBoba(){
+	   var tagIt3 = document.getElementById("myCanvas");
+	   var contextIt3 = tagIt3.getContext("2d");
+	   var boba = new Image();
+	   boba.src = "http://c0.klipartz.com/pngpicture/684/987/gratis-png-boba-fett-obi-wan-kenobi-luke-skywalker-star-wars-cazarrecompensas-anakin-skywalker-armadura-de-escala.png";
+	   boba.onload = function(){
+	      contextIt3.drawImage(boba, 100, 100, 100, 100);
+
+	}
+
+	function clearCanvas(){
+	   var tagIt3 = document.getElementById("myCanvas");
+	   var contextIt3 = tagIt3.getContext("2d");
+	   contextIt3.clearRect(0, 0, 200, 200);
+	}
 }
 </script>
 
