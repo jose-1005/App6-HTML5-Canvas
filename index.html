@@ -72,6 +72,11 @@ function drawBoba(){
       contextIt3.drawImage(boba, 100, 100, 100, 100);
 
    }
+	
+function clearCanvas(){
+   var tagIt3 = document.getElementById("myCanvas");
+   var contextIt3 = tagIt3.getContext("2d");
+   contextIt3.clearRect(0, 0, 200, 200);
 }
 </script>
 
@@ -101,14 +106,17 @@ function drawBoba(){
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
 </div>
-	
+
+// canvas is created here
 <canvas id="myCanvas" width="200%" height="200%" style="border:2px solid #000000;">
 </canvas>
 
+// these buttons serve to draw and clear
 <div>
-   <button class="w3-button w3-black" onClick = "drawRect()"> draw a rectangle</button>
+   <button class="w3-button w3-black" onClick = "drawRect()"> draw a rectangle </button>
    <button class="w3-button w3-black" onClick = "drawMyName()"> draw my name </button>
-   <button class="w3-button w3-black" onClick = "drawBoba()">draw Mando</button>
+   <button class="w3-button w3-black" onClick = "drawBoba()"> draw Mando </button>
+   <button class="w3-button w3-black" onClick = "clearCanvas()> clear Canvas </button>
 
 </div>
 
