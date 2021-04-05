@@ -74,11 +74,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}
 
 	function clearCanvas(){
-	   var tagIt3 = document.getElementById("myCanvas");
-	   var contextIt3 = tagIt3.getContext("2d");
-	   contextIt3.clearRect(0, 0, 200, 200);
+	   var tagIt4 = document.getElementById("myCanvas");
+	   var contextIt4 = tagIt4.getContext("2d");
+	   contextIt4.clearRect(0, 0, tagIt4.width, tagIt4.height);
 	}
-}
+
 </script>
 
 
@@ -108,16 +108,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<h1>App6---HTML5-Canvas</h1>
 </div>
 
-// canvas is created here
+
 <canvas id="myCanvas" width="200%" height="200%" style="border:2px solid #000000;">
 </canvas>
 
-// these buttons serve to draw and clear
+
 <div>
    <button class="w3-button w3-black" onClick = "drawRect()"> draw a rectangle </button>
    <button class="w3-button w3-black" onClick = "drawMyName()"> draw my name </button>
    <button class="w3-button w3-black" onClick = "drawBoba()"> draw Mando </button>
-   <button class="w3-button w3-black" onClick = "clearCanvas()"> clear Canvas </button>
+   <button class="w3-button w3-black" onClick = "clearCanvas()"> clear canvas </button>
 
 </div>
 
